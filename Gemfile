@@ -1,48 +1,48 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '4.2.8'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jquery-rails', '>= 4.1.1'
+gem 'jbuilder', '~> 2.6', '>= 2.6.0'
+gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'puma'
 
-gem 'devise'
-gem 'devise_invitable'
-gem 'simple_form'
-gem 'haml-rails'
+gem 'devise', '>= 4.2.0'
+gem 'devise_invitable', '>= 1.6.0'
+gem 'simple_form', '>= 3.2.1'
+gem 'haml-rails', '>= 0.9.0'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.6.3.1'
 gem 'money'
 gem 'chronic'
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', '~> 1.0.0.0'
 gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
 
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
-gem 'twitter'
+gem 'omniauth-twitter', '>= 1.3.0'
+gem 'twitter', '>= 6.0.0'
 gem 'koala', '~> 2.0'
-gem 'stripe'
+gem 'stripe', '>= 1.36.1'
 gem 'louvian_ruby'
 gem 'terminal-table'
 gem 'sidekiq'
 gem 'icalendar'
 gem 'kramdown'
-gem 'best_in_place', '~> 3.0.1'
-gem 'dotenv-rails'
-gem 'google_calendar'
+gem 'best_in_place', '~> 3.0.3'
+gem 'dotenv-rails', '>= 2.1.1'
+gem 'google_calendar', '>= 0.6.0'
 gem 'mini_magick'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.0', '>= 1.0.0'
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
   gem 'better_errors'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
   gem 'rack-mini-profiler'
@@ -50,7 +50,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.1'
   gem 'pry'
   gem 'fabrication'
   gem 'faker'
@@ -60,15 +60,15 @@ end
 
 group :test do
   gem 'rr', '1.1.2', require: false
-  gem 'stripe-ruby-mock', '~> 2.1.1', :require => 'stripe_mock'
+  gem 'stripe-ruby-mock', '~> 2.2.0'
   gem 'timecop'
-  gem 'simplecov', require: false
+  gem 'simplecov', '>= 0.12.0', require: false
 end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'lograge'
+  gem 'lograge', '>= 0.4.1'
 end
 
 ruby "2.2.4"
