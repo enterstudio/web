@@ -1,56 +1,56 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '5.0.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.1.1'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 
-gem 'devise'
-gem 'devise_invitable'
-gem 'simple_form'
-gem 'haml-rails'
+gem 'devise', '>= 4.2.0'
+gem 'devise_invitable', '>= 1.6.0'
+gem 'simple_form', '>= 3.2.1'
+gem 'haml-rails', '>= 0.9.0'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.6.3.1'
 gem 'money'
 gem 'chronic'
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', '~> 1.0.0.0'
 gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
 
-gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth-facebook', '>= 3.0.0'
+gem 'omniauth-twitter', '>= 1.2.1'
 gem 'twitter'
 gem 'koala', '~> 2.0'
 gem 'stripe'
 gem 'louvian_ruby'
 gem 'terminal-table'
-gem 'sidekiq'
+gem 'sidekiq', '>= 4.2.3'
 gem 'icalendar'
 gem 'kramdown'
-gem 'best_in_place', '~> 3.0.1'
-gem 'dotenv-rails'
+gem 'best_in_place', '~> 3.0.3'
+gem 'dotenv-rails', '>= 2.1.1'
 gem 'google_calendar'
 gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
 
 group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'better_errors'
-  gem 'quiet_assets'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
+  gem 'better_errors', '>= 2.1.1'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 0.10.1'
   gem 'letter_opener'
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.1'
   gem 'pry'
   gem 'fabrication'
   gem 'faker'
@@ -68,7 +68,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'lograge'
+  gem 'lograge', '>= 0.4.1'
 end
 
 ruby "2.2.4"
