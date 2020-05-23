@@ -8,7 +8,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'puma'
+gem 'puma', '>= 3.12.6'
 
 gem 'devise'
 gem 'devise_invitable'
