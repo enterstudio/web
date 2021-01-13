@@ -23,7 +23,7 @@ gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
 
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '>= 3.0.0'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem 'koala', '~> 2.0'
