@@ -24,7 +24,7 @@ gem 'ruby-progressbar'
 gem 'parallel'
 
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '>= 1.2.1'
 gem 'twitter'
 gem 'koala', '~> 2.0'
 gem 'stripe'
