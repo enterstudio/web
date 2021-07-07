@@ -25,8 +25,8 @@ gem 'parallel'
 
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
-gem 'twitter'
-gem 'koala', '~> 2.0'
+gem 'twitter', '>= 5.16.0'
+gem 'koala', '~> 2.4', '>= 2.4.0'
 gem 'stripe'
 gem 'louvian_ruby'
 gem 'terminal-table'
@@ -35,7 +35,7 @@ gem 'icalendar'
 gem 'kramdown'
 gem 'best_in_place', '~> 3.0.1'
 gem 'dotenv-rails'
-gem 'google_calendar'
+gem 'google_calendar', '>= 0.5.2'
 gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
 
@@ -46,7 +46,7 @@ group :development do
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
   gem 'rack-mini-profiler'
-  gem 'letter_opener'
+  gem 'letter_opener', '>= 1.4.1'
 end
 
 group :development, :test do
