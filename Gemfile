@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.1'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 
@@ -18,7 +18,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'money'
 gem 'chronic'
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', '~> 1.0.0.0'
 gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
@@ -33,14 +33,14 @@ gem 'terminal-table'
 gem 'sidekiq'
 gem 'icalendar'
 gem 'kramdown'
-gem 'best_in_place', '~> 3.0.1'
+gem 'best_in_place', '~> 3.0.3'
 gem 'dotenv-rails'
 gem 'google_calendar'
 gem 'mini_magick'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.0', '>= 1.0.0'
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'brakeman', require: false
