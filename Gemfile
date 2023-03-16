@@ -1,24 +1,24 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '6.1.7.3'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 
-gem 'devise'
+gem 'devise', '>= 4.7.0'
 gem 'devise_invitable'
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 gem 'haml-rails'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.6'
 gem 'money'
 gem 'chronic'
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', '~> 1.0.0.0'
 gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
@@ -33,14 +33,14 @@ gem 'terminal-table'
 gem 'sidekiq'
 gem 'icalendar'
 gem 'kramdown'
-gem 'best_in_place', '~> 3.0.1'
-gem 'dotenv-rails'
+gem 'best_in_place', '~> 3.0.3'
+gem 'dotenv-rails', '>= 2.7.6'
 gem 'google_calendar'
 gem 'mini_magick'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.0', '>= 1.0.0'
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'brakeman', require: false
@@ -68,7 +68,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
 end
 
 ruby "2.2.4"
