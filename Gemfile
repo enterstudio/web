@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '7.0.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
@@ -18,7 +18,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'money'
 gem 'chronic'
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', '~> 3.0.0.0'
 gem 'cancancan', '~> 1.10'
 gem 'ruby-progressbar'
 gem 'parallel'
@@ -40,7 +40,7 @@ gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.0', '>= 3.0.0'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'brakeman', require: false
